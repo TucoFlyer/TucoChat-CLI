@@ -61,7 +61,7 @@ request(`${connectionURL.protocol}//${connectionURL.host}/ws`, function (err, re
 
 deasync.loopWhile(function(){return wsUrl == null}); // wait until async request finishes
 
-log(chalk.blue("Creating readline interface... (UTF-8)"));
+log(chalk.blue("Creating readline interface..."));
 var rl = readline.createInterface({
    input: process.stdin,
    output: process.stdout
